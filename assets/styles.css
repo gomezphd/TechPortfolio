@@ -215,6 +215,14 @@ nav ul li ul li a {
     color: var(--oxford-blue); /* Royal blue text */
 }
 
+
+/* Ensure container class has appropriate styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 .component-header {
     background-color: var(--oxford-blue); /* Deep dark blue background */
     color: var(--white); /* White text */
