@@ -78,6 +78,7 @@ p {
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
+/* Navigation Styles */
 nav ul {
     list-style: none;
     display: flex;
@@ -111,6 +112,7 @@ nav ul li a.active {
     border-bottom: 2px solid var(--gray);
 }
 
+/* Dropdown menu styles */
 nav ul li ul {
     display: none;
     position: absolute;
@@ -136,6 +138,7 @@ nav ul li ul li a {
     width: 180px;
 }
 
+/* Hamburger Menu */
 .hamburger {
     display: none;
     flex-direction: column;
@@ -145,7 +148,7 @@ nav ul li ul li a {
 .hamburger div {
     width: 25px;
     height: 3px;
-    background-color: var(--white);
+    background-color: var (--white);
     margin: 5px;
     transition: all 0.3s;
 }
