@@ -196,8 +196,8 @@ nav ul li ul li a {
 
 /* Introduction Box */
 .component-box {
-    background: var(--alice-blue); /* Light background */
-    color: var(--dark-slate-gray); /* Darker font color */
+    background: var(--oxford-blue); /* Darker background */
+    color: var(--white); /* Light font color */
     border: 1px solid var(--light-gray);
     padding: 25px;
     border-radius: 8px;
