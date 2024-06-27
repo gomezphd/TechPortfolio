@@ -7,24 +7,24 @@
 
 /* Color Variables */
 :root {
-    --oxford-blue: #002147; /* Deep dark blue for header and footer */
-    --prussian-blue: #2F3C52; /* Muted dark blue */
-    --steel-blue: #4682B4; /* Soft blue */
-    --paynes-gray: #627383; /* Grayish blue */
-    --slate-gray: #658196; /* Slate blue */
-    --light-sky-blue: #87CEFA; /* Sky blue */
-    --light-steel-blue: #B0C4DE; /* Light steel blue */
-    --very-light-blue: #E5F2FA; /* Very light blue */
-    --alice-blue: #F0F8FF; /* Alice blue */
-    --white: #FFFFFF; /* White */
-    --gainsboro: #DCDCDC; /* Gainsboro */
-    --light-gray: #D3D3D3; /* Light gray */
-    --dark-gray: #A9A9A9; /* Dark gray */
-    --gray: #808080; /* Gray */
-    --dim-gray: #696969; /* Dim gray */
-    --dark-slate-gray: #2F4F4F; /* Dark slate gray */
-    --black: #000000; /* Black */
-    --light-beige: #F1FAEE; /* Light Beige */
+    --oxford-blue: #002147;
+    --prussian-blue: #2F3C52;
+    --steel-blue: #4682B4;
+    --paynes-gray: #627383;
+    --slate-gray: #658196;
+    --light-sky-blue: #87CEFA;
+    --light-steel-blue: #B0C4DE;
+    --very-light-blue: #E5F2FA;
+    --alice-blue: #F0F8FF;
+    --white: #FFFFFF;
+    --gainsboro: #DCDCDC;
+    --light-gray: #D3D3D3;
+    --dark-gray: #A9A9A9;
+    --gray: #808080;
+    --dim-gray: #696969;
+    --dark-slate-gray: #2F4F4F;
+    --black: #000000;
+    --light-beige: #F1FAEE;
 }
 
 /* General Styles */
@@ -56,9 +56,9 @@ header {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    display: flex; /* Changed to flex to enable align-items and justify-content */
-    align-items: center; /* Ensure items are centered vertically */
-    justify-content: space-between; /* Space between items */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 0 20px;
 }
 
@@ -116,7 +116,7 @@ nav ul li ul {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: var(--slate-gray); 
+    background-color: var(--slate-gray);
     padding: 0;
     list-style: none;
     border-radius: 5px;
@@ -196,8 +196,8 @@ nav ul li ul li a {
 
 /* Content Box */
 .component-box {
-    background: var(--alice-blue); 
-    color: var(--oxford-blue); 
+    background: var(--alice-blue);
+    color: var(--oxford-blue);
     border: 1px solid var(--light-gray);
     padding: 25px;
     border-radius: 8px;
@@ -205,26 +205,25 @@ nav ul li ul li a {
     text-align: left;
     font-size: 18px;
     max-width: 800px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-    display: block; /* Ensure boxes are block elements */
-    width: 100%; /* Ensure full width within container */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: block;
+    width: 100%;
 }
 
 .component-box p {
-    color: var(--oxford-blue); /* Dark blue text */
+    color: var(--oxford-blue);
 }
 
-/* Ensure container class has appropriate styling */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    display: block; /* Ensure container is a block element */
+    display: block;
 }
 
 .component-header {
-    background-color: var(--oxford-blue); /* Deep dark blue background */
-    color: var(--white); /* White text */
+    background-color: var(--oxford-blue);
+    color: var(--white);
     padding: 10px;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -233,7 +232,7 @@ nav ul li ul li a {
 }
 
 .bio-paragraph {
-    margin-bottom: 20px; /* Adjust the value as needed */
+    margin-bottom: 20px;
 }
 
 .section-title {
