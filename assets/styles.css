@@ -5,7 +5,8 @@
     box-sizing: border-box;
 }
 
-/* Former Color Variables
+/*
+Former Color Variables
 :root {
     --oxford-blue: #002147;
     --prussian-blue: #2F3C52;
@@ -24,11 +25,11 @@
     --dim-gray: #696969;
     --dark-slate-gray: #2F4F4F;
     --black: #000000;
-    --light-beige: #F1FAEE; /* Light Beige */
+    --light-beige: #F1FAEE;
 }
 */
 
-/* Color Variables - Watercolor version*/
+/* Color Variables - Watercolor version */
 :root {
     --dark-blue: #002147; 
     --oxford-blue: #336699;
