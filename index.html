@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Header and Footer</title>
+    <meta name="description" content="Portfolio of Carlos C. Gomez, PhD - Psychologist and Emerging Data Scientist.">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Color Variables */
+        :root {
+            --oxford-blue: #002147;
+            --prussian-blue: #2F3C52;
+            --steel-blue: #4682B4;
+            --paynes-gray: #627383;
+            --slate-gray: #658196;
+            --light-sky-blue: #415767;
+            --light-steel-blue: #B0C4DE;
+            --very-light-blue: #E5F2FA;
+            --alice-blue: #F0F8FF;
+            --white: #FFFFFF;
+            --gainsboro: #DCDCDC;
+            --light-gray: #D3D3D3;
+            --dark-gray: #A9A9A9;
+            --gray: #808080;
+            --dim-gray: #696969;
+            --dark-slate-gray: #2F4F4F;
+            --black: #000000;
+            --light-beige: #F1FAEE; /* Light Beige */
+        }
+
+        /* General Styles */
+        body {
+            font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+            background-color: var(--slate-gray);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(90deg, var(--oxford-blue), var(--prussian-blue));
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 3px solid var(--light-sky-blue);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        h1 {
+            margin: 0;
+            color: var(--white);
+            font-size: 2.5em;
+            letter-spacing: 1px;
+            font-family: 'Raleway', Helvetica, Arial, sans-serif;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        }
+
+        p {
+            margin: 5px 0 0 0;
+            color: var(--very-light-blue);
+            font-size: 1em;
+            font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+            position: relative;
+        }
+
+        nav ul li a {
+            color: var(--white);
+            text-decoration: none;
+            padding: 10px 15px;
+            display: inline-block;
+            transition: background 0.3s, color 0.3s;
+            border-radius: 5px;
+            font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+        }
+
+        nav ul li a:hover, nav ul li a.active {
+            background-color: var(--slate-gray);
+            color: var(--white);
+        }
+
+        nav ul li a.active {
+            font-weight: bold;
+            border-bottom: 2px solid var(--light-sky-blue);
+        }
+
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: var(--prussian-blue);
+            padding: 0;
+            list-style: none;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        nav ul li ul li {
+            margin: 0;
+        }
+
+        nav ul li ul li a {
+            padding: 10px 15px;
+            width: 180px;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .hamburger div {
+            width: 25px;
+            height: 3px;
+            background-color: var(--white);
+            margin: 5px;
+            transition: all 0.3s;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background-color: var(--prussian-blue);
+                position: absolute;
+                top: 60px;
+                left: 0;
+            }
+
+            nav ul li {
+                text-align: center;
+                margin: 10px 0;
+            }
+
+            nav ul.show {
+                display: flex;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+        }
+
+        /* Footer Styles */
+        .footer {
+            background-color: var(--prussian-blue);
+            color: var(--white);
+            text-align: center;
+            padding: 20px 0;
+            border-top: 3px solid var(--light-sky-blue);
+        }
+
+        .social-icons a {
+            color: var(--white);
+            margin: 0 10px;
+            font-size: 2em;
+        }
+
+        .social-icons a:hover {
+            color: var(--light-sky-blue);
+        }
+
+        /* Introduction Box */
+        .component-box {
+            background: var(--paynes-gray); /* Light background */
+            color: var(--oxford-blue)
+            border: 1px solid var(--light-gray);
+            padding: 25px;
+            border-radius: 8px;
+            margin: 20px auto;
+            text-align: left;
+            font-size: 18px;
+            max-width: 800px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for better separation */
+        }
+
+        .component-header {
+            background-color: var(--prussian-blue);
+            color: var(--white);
+            padding: 15px; /* Increased padding for better spacing */
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            margin: -25px -25px 20px -25px; /* Adjusted margins for consistency */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Slightly darker shadow */
+            font-size: 20px; /* Slightly larger font size for header */
+            font-weight: bold; /* Bold text for header */
+            text-align: center; /* Center the header text */
+        }
+
+        /* Add some extra margin to the paragraph inside the component box */
+        .component-box p {
+            margin-top: 15px;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('nav ul');
+            const navItems = document.querySelectorAll('nav ul li a');
+
+            hamburger.addEventListener('click', function () {
+                navLinks.classList.toggle('show'); /* Toggle mobile menu */
+            });
+
+            navItems.forEach(item => {
+                item.addEventListener('click', function () {
+                    if (navLinks.classList.contains('show')) {
+                        navLinks.classList.remove('show'); /* Close menu on link click */
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div>
+                <h1>Carlos C. Gomez, PhD</h1>
+                <p>Psychologist | Emerging Data Scientist | Lifelong Learner</p>
+            </div>
+            <nav>
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li>
+                        <a href="pages/about.html">About</a>
+                        <ul>
+                            <li><a href="pages/about.html#bio">Bio</a></li>
+                            <li><a href="pages/about.html#experience">Experience</a></li>
+                            <li><a href="pages/about.html#education">Education</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="pages/portfolio.html">Portfolio</a>
+                        <ul>
+                            <li><a href="pages/portfolio.html#projects">Projects</a></li>
+                            <li><a href="pages/portfolio.html#publications">Publications</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="pages/skills.html">Skills</a></li>
+                    <li><a href="pages/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <div class="component-box">
+                <div class="component-header">Welcome to My Portfolio</div>
+                <p>Welcome to the portfolio of Carlos C. Gomez, PhD. Here you will find information about my professional background, education, projects, skills, and ways to get in touch with me. I am a licensed psychologist with over 25 years of experience in private practice and academic roles, currently pivoting into the tech field with a strong foundation in data science and analytical skills.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/gomezphd/" target="_blank" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:cgomez@gomezphd.com" target="_blank" aria-label="Email Carlos C. Gomez"><i class="fas fa-envelope"></i></a>
+            <a href="https://github.com/gomezphd" target="_blank" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+        </div>
+        <p>&copy; 2024 Carlos C. Gomez, PhD. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
