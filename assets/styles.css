@@ -208,6 +208,10 @@ nav ul li ul li a {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for better separation */
 }
 
+.component-box p {
+    color: var(--oxford-blue); /* Royal blue text */
+}
+
 .component-header {
     background-color: var(--oxford-blue); /* Royal blue background */
     color: var(--white); /* White text */
@@ -217,3 +221,4 @@ nav ul li ul li a {
     margin: -20px -20px 20px -20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
