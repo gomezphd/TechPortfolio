@@ -229,4 +229,18 @@ nav ul li ul li a {
     margin-bottom: 20px; /* Adjust the value as needed */
 }
 
+.section-title {
+    font-size: 1.5em;
+    color: var(--oxford-blue);
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+    border-bottom: 2px solid var(--gray);
+    padding-bottom: 5px;
+}
+
+.section-content {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
 
