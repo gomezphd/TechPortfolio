@@ -186,87 +186,34 @@ nav ul li ul li a {
 
 .social-icons a {
     color: var(--white);
-    margin: ### `index.html`
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Header and Footer</title>
-    <meta name="description" content="Portfolio of Carlos C. Gomez, PhD - Psychologist and Emerging Data Scientist.">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-    <!-- FontAwesome for social media icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <!-- External CSS -->
-    <link rel="stylesheet" href="assets/styles.css">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <div>
-                <h1>Carlos C. Gomez, PhD</h1>
-                <p>Psychologist | Emerging Data Scientist | Lifelong Learner</p>
-            </div>
-            <nav>
-                <div class="hamburger">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <ul>
-                    <li><a href="#home" class="active">Home</a></li>
-                    <li>
-                        <a href="#about">About</a>
-                        <ul>
-                            <li><a href="#bio">Bio</a></li>
-                            <li><a href="#education">Education</a></li>
-                            <li><a href="#certificates">Certificates</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#projects">Projects</a>
-                        <ul>
-                            <li><a href="#project1">Project 1 - CAP2761 Azure Project</a></li>
-                            <li><a href="#project2">Project 2 - CAP2100 Machine Learning Foundations</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#skills">Skills</a>
-                        <ul>
-                            <li><a href="#technical-skills">Technical Skills</a></li>
-                            <li><a href="#soft-skills">Soft Skills</a></li>
-                            <li><a href="#clinical-skills">Clinical Skills</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    margin: 0 10px;
+    font-size: 2em;
+}
 
-    <!-- Main Content -->
-    <main>
-        <div class="container">
-            <div class="component-box">
-                <div class="component-header">Welcome to My Portfolio</div>
-                <p>Welcome to the portfolio of Carlos C. Gomez, PhD. Here you will find information about my professional background, education, projects, skills, and ways to get in touch with me. I am a licensed psychologist with over 25 years of experience in private practice and academic roles, currently pivoting into the tech field with a strong foundation in data science and analytical skills.</p>
-            </div>
-        </div>
-    </main>
+.social-icons a:hover {
+    color: var(--light-sky-blue);
+}
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="social-icons">
-            <a href="https://www.linkedin.com/in/gomezphd/" target="_blank" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
-            <a href="mailto:cgomez@gomezphd.com" target="_blank" aria-label="Email Carlos C. Gomez"><i class="fas fa-envelope"></i></a>
-            <a href="https://github.com/gomezphd" target="_blank" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
-        </div>
-        <p>&copy; 2024 Carlos C. Gomez, PhD. All Rights Reserved.</p>
-    </footer>
+/* Introduction Box */
+.component-box {
+    background: var(--paynes-gray); /* Light background */
+    color: var(--oxford-blue);
+    border: 1px solid var(--light-gray);
+    padding: 25px;
+    border-radius: 8px;
+    margin: 20px auto;
+    text-align: left;
+    font-size: 18px;
+    max-width: 800px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for better separation */
+}
 
-    <!-- External JS -->
-    <script src="assets/scripts.js"></script>
-</body>
-</html>
+.component-header {
+    background-color: var(--oxford-blue);
+    color: var(--white);
+    padding: 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin: -20px -20px 20px -20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
