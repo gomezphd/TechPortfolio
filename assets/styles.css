@@ -120,4 +120,80 @@ nav ul li ul {
     padding: 0;
     list-style: none;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li {
+    margin: 0;
+}
+
+nav ul li ul li a {
+    padding: 10px 15px;
+    width: 180px;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: var(--white);
+    margin: 5px;
+    transition: all 0.3s;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: var(--prussian-blue);
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    nav ul li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+### Step 3: Verify `assets/scripts.js`
+
+Ensure your `assets/scripts.js` file contains the correct JavaScript:
+
+**`assets/scripts.js`**
+
+```javascript
+document.addEventListener('DOMContentLoaded', function () {
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('nav ul');
+    const navItems = document.querySelectorAll('nav ul li a');
+
+    hamburger.addEventListener('click', function () {
+        navLinks.classList.toggle('show'); /* Toggle mobile menu */
+    });
+
+    navItems.forEach(item => {
+        item.addEventListener('click', function () {
+            if (navLinks.classList.contains('show')) {
+                navLinks.classList.remove('show'); /* Close menu on link click */
+            }
+        });
+    });
+});
