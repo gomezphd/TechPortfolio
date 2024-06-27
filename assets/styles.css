@@ -56,7 +56,9 @@ header {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    display: block;
+    display: flex; /* Changed to flex to enable align-items and justify-content */
+    align-items: center; /* Ensure items are centered vertically */
+    justify-content: space-between; /* Space between items */
     padding: 0 20px;
 }
 
