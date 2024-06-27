@@ -50,7 +50,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    border-bottom: 3px solid var(--light-sky-blue);
+    border-bottom: 3px solid var(--dark-slate-gray);
 }
 
 .container {
@@ -181,7 +181,7 @@ nav ul li ul li a {
     color: var(--white);
     text-align: center;
     padding: 20px 0;
-    border-top: 3px solid var(--light-sky-blue);
+    border-top: 3px solid var(--dark-slate-gray);
 }
 
 .social-icons a {
