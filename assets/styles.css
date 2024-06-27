@@ -194,8 +194,8 @@ nav ul li ul li a {
 
 /* Content Box */
 .component-box {
-    background: var(--alice-blue); /* Light blue background */
-    color: var(--oxford-blue); /* Dark blue text */
+    background: var(--alice-blue); 
+    color: var(--oxford-blue); 
     border: 1px solid var(--light-gray);
     padding: 25px;
     border-radius: 8px;
@@ -203,8 +203,9 @@ nav ul li ul li a {
     text-align: left;
     font-size: 18px;
     max-width: 800px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for better separation */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
     display: block; /* Ensure boxes are block elements */
+    width: 100%; /* Ensure full width within container */
 }
 
 .component-box p {
