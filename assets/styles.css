@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-/* Color Variables */
+/* Former Color Variables
 :root {
     --oxford-blue: #002147;
     --prussian-blue: #2F3C52;
@@ -16,6 +16,30 @@
     --light-steel-blue: #B0C4DE;
     --very-light-blue: #E5F2FA;
     --alice-blue: #F0F8FF;
+    --white: #FFFFFF;
+    --gainsboro: #DCDCDC;
+    --light-gray: #D3D3D3;
+    --dark-gray: #A9A9A9;
+    --gray: #808080;
+    --dim-gray: #696969;
+    --dark-slate-gray: #2F4F4F;
+    --black: #000000;
+    --light-beige: #F1FAEE; /* Light Beige */
+}
+*/
+
+/* Color Variables - Watercolor version*/
+:root {
+    --dark-blue: #002147; 
+    --oxford-blue: #336699;
+    --prussian-blue: #4F5D6B;
+    --steel-blue: #6699CC;
+    --paynes-gray: #8899AA;
+    --slate-gray: #8788B1;
+    --light-sky-blue: #A3C1DA;
+    --light-steel-blue: #C3D4E5;
+    --very-light-blue: #E5F2FA;
+    --alice-blue: #F3F9FF; 
     --white: #FFFFFF;
     --gainsboro: #DCDCDC;
     --light-gray: #D3D3D3;
