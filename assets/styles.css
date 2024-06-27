@@ -31,35 +31,35 @@ Former Color Variables
 
 /* Color Variables - Watercolor version */
 :root {
-    --dark-blue: #002147; 
-    --oxford-blue: #336699;
-    --prussian-blue: #4F5D6B;
-    --steel-blue: #6699CC;
-    --paynes-gray: #8899AA;
-    --slate-gray: #8788B1;
-    --light-sky-blue: #A3C1DA;
-    --light-steel-blue: #C3D4E5;
-    --very-light-blue: #E5F2FA;
-    --alice-blue: #F3F9FF; 
-    --white: #FFFFFF;
-    --gainsboro: #DCDCDC;
-    --light-gray: #D3D3D3;
-    --dark-gray: #A9A9A9;
-    --gray: #808080;
-    --dim-gray: #696969;
-    --dark-slate-gray: #2F4F4F;
-    --black: #000000;
+    --oxford-blue: #002147; /* Deep dark blue for header and footer */
+    --prussian-blue: #2F3C52; /* Muted dark blue */
+    --steel-blue: #4682B4; /* Soft blue */
+    --paynes-gray: #627383; /* Grayish blue */
+    --slate-gray: #658196; /* Slate blue */
+    --light-sky-blue: #87CEFA; /* Sky blue */
+    --light-steel-blue: #B0C4DE; /* Light steel blue */
+    --very-light-blue: #E5F2FA; /* Very light blue */
+    --alice-blue: #F0F8FF; /* Alice blue */
+    --white: #FFFFFF; /* White */
+    --gainsboro: #DCDCDC; /* Gainsboro */
+    --light-gray: #D3D3D3; /* Light gray */
+    --dark-gray: #A9A9A9; /* Dark gray */
+    --gray: #808080; /* Gray */
+    --dim-gray: #696969; /* Dim gray */
+    --dark-slate-gray: #2F4F4F; /* Dark slate gray */
+    --black: #000000; /* Black */
     --light-beige: #F1FAEE; /* Light Beige */
 }
 
 /* General Styles */
 body {
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-    background-color: var(--slate-gray);
+    background-color: var(--light-beige); /* Light beige background */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
+
 
 main {
     flex: 1;
@@ -202,7 +202,7 @@ nav ul li ul li a {
 
 /* Footer Styles */
 .footer {
-    background-color: var(--prussian-blue);
+    background-color: var(--oxford-blue);
     color: var(--white);
     text-align: center;
     padding: 20px 0;
@@ -222,7 +222,7 @@ nav ul li ul li a {
 /* Content Box */
 .component-box {
     background: var(--alice-blue); /* Light blue background */
-    color: var(--oxford-blue); /* Royal blue text */
+    color: var(--oxford-blue); /* Dark blue text */
     border: 1px solid var(--light-gray);
     padding: 25px;
     border-radius: 8px;
@@ -238,7 +238,7 @@ nav ul li ul li a {
 }
 
 .component-header {
-    background-color: var(--oxford-blue); /* Royal blue background */
+    background-color: var(--oxford-blue); /* Deep dark blue background */
     color: var(--white); /* White text */
     padding: 10px;
     border-top-left-radius: 8px;
