@@ -56,9 +56,7 @@ header {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: block;
     padding: 0 20px;
 }
 
@@ -175,9 +173,6 @@ nav ul li ul li a {
     }
 }
 
-
-
-
 /* Footer Styles */
 .footer {
     background: linear-gradient(90deg, var(--oxford-blue), var(--prussian-blue));
@@ -209,18 +204,19 @@ nav ul li ul li a {
     font-size: 18px;
     max-width: 800px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for better separation */
+    display: block; /* Ensure boxes are block elements */
 }
 
 .component-box p {
-    color: var(--oxford-blue); /* Royal blue text */
+    color: var(--oxford-blue); /* Dark blue text */
 }
-
 
 /* Ensure container class has appropriate styling */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    display: block; /* Ensure container is a block element */
 }
 
 .component-header {
@@ -251,4 +247,3 @@ nav ul li ul li a {
     margin-bottom: 20px;
     line-height: 1.6;
 }
-
