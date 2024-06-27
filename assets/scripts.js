@@ -5,13 +5,13 @@ document.addEventListener('DOMContentLoaded', function () {
     const navItems = document.querySelectorAll('nav ul li a');
 
     hamburger.addEventListener('click', function () {
-        navLinks.classList.toggle('show'); /* Toggle mobile menu */
+        navLinks.classList.toggle('show');
     });
 
     navItems.forEach(item => {
         item.addEventListener('click', function () {
             if (navLinks.classList.contains('show')) {
-                navLinks.classList.remove('show'); /* Close menu on link click */
+                navLinks.classList.remove('show');
             }
         });
     });
