@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CAP2761 Class Project: Beta Portfolio</title>
+    <title>Portfolio Header and Footer</title>
     <meta name="description" content="Portfolio of Carlos C. Gomez, PhD - Psychologist and Emerging Data Scientist.">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
@@ -24,7 +24,7 @@
             --steel-blue: #4682B4;
             --paynes-gray: #627383;
             --slate-gray: #658196;
-            --light-sky-blue: #93B5CE;
+            --light-sky-blue: #415767;
             --light-steel-blue: #B0C4DE;
             --very-light-blue: #E5F2FA;
             --alice-blue: #F0F8FF;
@@ -36,14 +36,13 @@
             --dim-gray: #696969;
             --dark-slate-gray: #2F4F4F;
             --black: #000000;
-            --dark-gray-text: #2f2f2f; /* Dark Gray Text */
+            --light-beige: #F1FAEE; /* Light Beige */
         }
 
         /* General Styles */
         body {
             font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-            background-color: var(--alice-blue);
-            color: var(--dark-slate-gray);
+            background-color: var(--slate-gray);
             display: flex;
             flex-direction: column;
             min-height: 100vh;
@@ -54,7 +53,6 @@
             display: flex;
             flex-direction: column;
         }
-
         /* Header Styles */
         header {
             background: linear-gradient(90deg, var(--oxford-blue), var(--prussian-blue));
@@ -206,20 +204,21 @@
         .social-icons a:hover {
             color: var(--light-sky-blue);
         }
-
+        
         /* Introduction Box */
         .component-box {
-            background: var(--slate-gray); 
-            color: var(--dark-gray-text); /* Darker font color */
-            border: 1px solid var(--slate-gray);
+            background: var(--paynes-gray); /* Light background */
+            color: var(--oxford-blue)
+            border: 1px solid var(--light-gray);
             padding: 25px;
             border-radius: 8px;
             margin: 20px auto;
             text-align: left;
             font-size: 18px;
             max-width: 800px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for better separation */
         }
-
+        
         .component-header {
             background-color: var(--oxford-blue);
             color: var(--white);
