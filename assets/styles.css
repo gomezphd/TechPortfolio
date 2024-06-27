@@ -175,6 +175,9 @@ nav ul li ul li a {
     }
 }
 
+
+
+
 /* Footer Styles */
 .footer {
     background: linear-gradient(90deg, var(--oxford-blue), var(--prussian-blue));
@@ -221,3 +224,9 @@ nav ul li ul li a {
     margin: -20px -20px 20px -20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+.bio-paragraph {
+    margin-bottom: 20px; /* Adjust the value as needed */
+}
+
+
