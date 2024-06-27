@@ -13,48 +13,8 @@
     <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div>
-                <h1>Carlos C. Gomez, PhD</h1>
-                <p>Psychologist | Emerging Data Scientist | Lifelong Learner</p>
-            </div>
-            <nav>
-                <div class="hamburger">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <ul>
-                    <li><a href="#home" class="active">Home</a></li>
-                    <li>
-                        <a href="#about">About</a>
-                        <ul>
-                            <li><a href="#bio">Bio</a></li>
-                            <li><a href="#education">Education</a></li>
-                            <li><a href="#certificates">Certificates</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#projects">Projects</a>
-                        <ul>
-                            <li><a href="#project1">Project 1 - CAP2761 Azure Project</a></li>
-                            <li><a href="#project2">Project 2 - CAP2100 Machine Learning Foundations</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#skills">Skills</a>
-                        <ul>
-                            <li><a href="#technical-skills">Technical Skills</a></li>
-                            <li><a href="#soft-skills">Soft Skills</a></li>
-                            <li><a href="#clinical-skills">Clinical Skills</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <!-- Placeholder for Header -->
+    <div id="header-placeholder"></div>
 
     <!-- Main Content -->
     <main>
@@ -72,6 +32,12 @@
     <!-- External JS -->
     <script src="assets/scripts.js"></script>
     <script>
+        fetch('components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+
         fetch('components/footer.html')
             .then(response => response.text())
             .then(data => {
