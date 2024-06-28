@@ -13,18 +13,10 @@
     --paynes-gray: #627383;
     --slate-gray: #658196;
     --light-sky-blue: #87CEFA;
-    --light-steel-blue: #B0C4DE;
-    --very-light-blue: #E5F2FA;
     --alice-blue: #F0F8FF;
     --white: #FFFFFF;
-    --gainsboro: #DCDCDC;
-    --light-gray: #D3D3D3;
-    --dark-gray: #A9A9A9;
     --gray: #808080;
-    --dim-gray: #696969;
-    --dark-slate-gray: #2F4F4F;
-    --black: #000000;
-    --light-beige: #F1FAEE;
+    --dark-gray: #A9A9A9;
 }
 
 /* General Styles */
@@ -36,6 +28,7 @@ body {
     min-height: 100vh;
 }
 
+/* Main Content */
 main {
     flex: 1;
     display: flex;
@@ -53,6 +46,7 @@ header {
     border-bottom: 3px solid var(--gray);
 }
 
+/* Container to Align Header Content */
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -62,6 +56,7 @@ header {
     padding: 0 20px;
 }
 
+/* Header Title */
 h1 {
     margin: 0;
     color: var(--white);
@@ -71,9 +66,10 @@ h1 {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
+/* Header Subtitle */
 p {
     margin: 5px 0 0 0;
-    color: var(--very-light-blue);
+    color: var(--light-sky-blue);
     font-size: 1em;
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
@@ -102,6 +98,7 @@ nav ul li a {
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
+/* Active and Hover States for Navigation Links */
 nav ul li a:hover, nav ul li a.active {
     background-color: var(--steel-blue);
     color: var(--white);
@@ -112,7 +109,7 @@ nav ul li a.active {
     border-bottom: 2px solid var(--gray);
 }
 
-/* Dropdown menu styles */
+/* Dropdown Menu Styles */
 nav ul li ul {
     display: none;
     position: absolute;
@@ -138,7 +135,7 @@ nav ul li ul li a {
     width: 180px;
 }
 
-/* Hamburger Menu */
+/* Hamburger Menu for Mobile View */
 .hamburger {
     display: none;
     flex-direction: column;
@@ -153,6 +150,7 @@ nav ul li ul li a {
     transition: all 0.3s;
 }
 
+/* Media Query for Mobile Devices */
 @media (max-width: 768px) {
     nav ul {
         display: none;
@@ -197,11 +195,11 @@ nav ul li ul li a {
     color: var(--light-sky-blue);
 }
 
-/* Content Box */
+/* Component Box Styles */
 .component-box {
     background: var(--alice-blue);
     color: var(--oxford-blue);
-    border: 1px solid var(--light-gray);
+    border: 1px solid var(--dark-gray);
     padding: 25px;
     border-radius: 8px;
     margin: 20px auto;
@@ -217,6 +215,7 @@ nav ul li ul li a {
     color: var(--oxford-blue);
 }
 
+/* Container */
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -224,6 +223,7 @@ nav ul li ul li a {
     display: block;
 }
 
+/* Component Header */
 .component-header {
     background-color: var(--oxford-blue);
     color: var(--white);
@@ -232,23 +232,4 @@ nav ul li ul li a {
     border-top-right-radius: 8px;
     margin: -20px -20px 20px -20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.bio-paragraph {
-    margin-bottom: 20px;
-}
-
-.section-title {
-    font-size: 1.5em;
-    color: var(--oxford-blue);
-    margin-top: 20px;
-    margin-bottom: 10px;
-    text-align: left;
-    border-bottom: 2px solid var(--gray);
-    padding-bottom: 5px;
-}
-
-.section-content {
-    margin-bottom: 20px;
-    line-height: 1.6;
 }
