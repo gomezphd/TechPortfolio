@@ -3,14 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page Title -->
     <title>Class Project: Beta Tech Portfolio</title>
     <meta name="description" content="Portfolio of Carlos C. Gomez, PhD - Psychologist and Emerging Data Scientist.">
+    
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
     <!-- FontAwesome for social media icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
     <!-- External CSS -->
     <link rel="stylesheet" href="assets/styles.css">
+    
 </head>
 <body>
     <!-- Placeholder for Header -->
@@ -34,17 +40,19 @@
     <!-- External JS -->
     <script src="assets/scripts.js"></script>
     <script>
+        // Fetch and load the header
         fetch('components/header.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('header-placeholder').innerHTML = data;
-            });
+                // Initialize scripts for dynamically loaded content
+                const hamburger = document.querySelector('.hamburger');
+                const navLinks = document.querySelector('nav ul');
+                const navItems = document.querySelectorAll('nav ul li a');
 
-        fetch('components/footer.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('footer-placeholder').innerHTML = data;
-            });
-    </script>
-</body>
-</html>
+                hamburger.addEventListener('click', function () {
+                    navLinks.classList.toggle('show');
+                });
+
+                navItems.forEach(item => {
+       
