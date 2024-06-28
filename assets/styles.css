@@ -104,7 +104,7 @@ nav ul li a {
 
 nav ul li a:hover, nav ul li a.active {
     background-color: var(--steel-blue);
-    color: var (--white);
+    color: var(--white);
 }
 
 nav ul li a.active {
@@ -177,12 +177,6 @@ nav ul li ul li a {
         display: flex;
     }
 }
-
-
-
-
-
-
 
 /* Footer Styles */
 .footer {
